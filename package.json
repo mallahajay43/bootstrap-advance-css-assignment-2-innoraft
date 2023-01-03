@@ -1,14 +1,20 @@
 {
+  "homepage": "https://mallahajay43.github.io/bootstrap-advance-css-assignment-2-innoraft/",
   "name": "bootstrap_project_css_adv_2",
   "version": "1.0.0",
   "description": "bootstrap project",
   "main": "index.js",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
