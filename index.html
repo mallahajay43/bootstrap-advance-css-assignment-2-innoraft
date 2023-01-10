@@ -5,163 +5,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
+    <header class="container-fluid bg-light">
       <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
-        <div class="container text-dark" style="height: 65px">
+        <div class="container text-dark ">
           <a class="navbar-brand p-0" href="#">
             <img src="./images/head_logo.jpg" alt="" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse h-100" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 h-lg-100 bg-light">
-              <li class="nav-item d-flex align-items-center px-3">
-                <a href="" class="nav-link " href="#">Home</a>
-              </li>
-              <li class="nav-item d-flex align-items-center px-3">
-                <a href="" class="nav-link " href="#">About</a>
-              </li>
-              <li class="nav-item d-flex align-items-center px-3">
-                <a href="" class="nav-link " href="#">Services</a>
-              </li>
-              <li class="nav-item d-flex align-items-center px-3">
-                <a href="" class="nav-link " href="#">Portfolio</a>
-              </li>
-              <li class="nav-item d-flex align-items-center px-3">
-                <a href="" class="nav-link " href="#">Price</a>
-              </li>
-              <li class="nav-item d-flex align-items-center position-relative px-3">
-                <a
-                  class="nav-link dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  href="#"
-                  role="button"
-                  aria-expanded="false"
-                  >Blog</a
-                >
-                <ul class="dropdown-menu position-absolute start-0">
-                  <li><a class="dropdown-item" href="#">blog 1</a></li>
-                  <li><a class="dropdown-item" href="#">blog 2</a></li>
-                  <li><a class="dropdown-item" href="#">blog 3</a></li>
-                </ul>
-              </li>
-              <li class="nav-item d-flex align-items-center">
-                <a
-                  href=""
-                  class="nav-link py-0 d-flex align-items-center px-3"
-                  href="#"
-                  ><img src="./images/mail.jpg" alt="" class="rounded-circle"
+          </a> 
+          <input type="checkbox" class="nav-toggle" id="nav-toggle" unchecked></input>
+          <label for="nav-toggle" class="nav-label flex-center px-3"><span></span></label>           
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 bg-light">
+            <li class="nav-item d-flex align-items-center px-3">
+              <a href="" class="nav-link " href="#">Home</a>
+            </li>
+            <li class="nav-item d-flex align-items-center px-3">
+              <a href="" class="nav-link " href="#">About</a>
+            </li>
+            <li class="nav-item d-flex align-items-center px-3">
+              <a href="" class="nav-link " href="#">Services</a>
+            </li>
+            <li class="nav-item d-flex align-items-center px-3">
+              <a href="" class="nav-link " href="#">Portfolio</a>
+            </li>
+            <li class="nav-item d-flex align-items-center px-3">
+              <a href="" class="nav-link " href="#">Price</a>
+            </li>
+            <li class="nav-item d-flex align-items-center position-relative px-3 dropdown show">
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">blog 1</a></li>
+                <li><a class="dropdown-item" href="#">blog 2</a></li>
+                <li><a class="dropdown-item" href="#">blog 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <a
+                href=""
+                class="nav-link py-0 d-flex align-items-center px-3"
+                href="#"
+                ><img src="./images/mail.jpg" alt="" class="rounded-circle"
                 /></a>
-              </li>
-            </ul>
-          </div>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
     <main>
       <section
-        class="container-fluid intro--container text-light d-flex align-items-center position-relative"
+      class="container-fluid intro--container text-light d-flex justify-content-center align-items-center position-relative"
       >
-        <div
-          class="container-sm text-center d-flex justify-content-center flex-column align-items-center"
+      <div
+      class="container-sm text-center d-flex justify-content-center flex-column align-items-center"
+      >
+      <h2 class="w-100 heading mb-4" >
+        We Will <strong>Make</strong> Your <strong>Business</strong> Great
+        Again
+      </h2>
+      <!-- <p class="text-white-50 w-100" style="max-width: 340px"> -->
+      <p class="faded w-100 mb-4" style="max-width: 400px">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit dolem dolor.
+      </p>
+      <div class="">
+        <button
+        class="btn text-center text-uppercase mb-2"
         >
-          <h2 class="w-100" style="max-width: 500px">
-            We Will <strong>Make</strong> Your <strong>Business</strong> Great
-            Again
-          </h2>
-          <p class="text-white-50 w-100" style="max-width: 340px">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit dolem dolor.
-          </p>
-          <div class="">
-            <button
-              class="btn btn-primary rounded-pill px-3 py-2 text-center text-uppercase mb-2"
-            >
-              contact us
-            </button>
-            <button
-              class="btn btn-primary rounded-pill px-3 py-2 text-center text-uppercase mb-2"
-            >
-              discover now
+        contact us
+      </button>
+      <button
+      class="btn text-center text-uppercase mb-2"
+      >
+      discover now
             </button>
           </div>
           <img
-            class="position-absolute bottom-0 start-50 translate-middle"
-            src="./images/icons/darrow.png"
-            alt=""
-            style="width: 15px"
+          class="position-absolute bottom-0 start-50 down-arrow"
+          src="./images/icons/darrow.png"
+          alt=""
           />
         </div>
       </section>
-
+      
       <section class="container-fluid">
-        <div class="container">
+        <div class="container px-0">
           <div class="row py-5 my-lg-4 my-md-4 gy-4">
             <div
-              class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center flex-column"
+            class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center flex-column"
             >
-              <h2 class="text-dark mb-lg-4 mb-sm-3">
-                Hello <strong>World</strong>
-              </h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-                labore in voluptatibus, iste iure delectus laudantium atque
-                quibusdam praesentium, nobis, at numquam distinctio magni
+            <h2 class="text-dark heading mb-lg-4 mb-sm-3">
+              Hello <strong>World</strong>
+            </h2>
+            <p class="faded">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+              labore in voluptatibus, iste iure delectus laudantium atque
+              quibusdam praesentium, nobis, at numquam distinctio magni
                 accusantium!
               </p>
               <div
-                class="container-fluid d-flex justify-content-start align-items-center mb-3 p-0"
+              class="container-fluid d-flex justify-content-start align-items-center mb-3 p-0"
               >
-                <img
-                  src="./images/icons/i-diamond_b.svg"
-                  alt=""
-                  class="pe-2"
-                  style="width: 40px"
-                />
-                <span>Exploring your area of activity</span>
-              </div>
-              <div
-                class="container-fluid d-flex justify-content-start align-items-center mb-3 p-0"
-              >
-                <img
-                  src="./images/icons/i-wallet_b.svg"
-                  alt=""
-                  class="pe-2"
-                  style="width: 40px"
-                />
-                <span>Competitive analysis</span>
-              </div>
-              <div
-                class="container-fluid d-flex justify-content-start align-items-center p-0"
-              >
-                <img
-                  src="./images/icons/i-trophy_b.svg"
-                  alt=""
-                  class="pe-2"
-                  style="width: 40px"
-                />
-                <span>to solve your problems</span>
-              </div>
+              <img
+              src="./images/icons/i-diamond_b.svg"
+              alt=""
+              class="pe-2 icon--intro"
+              />
+              <span>Exploring your area of activity</span>
             </div>
             <div
-              class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center"
+            class="container-fluid d-flex justify-content-start align-items-center mb-3 p-0"
             >
+            <img
+            src="./images/icons/i-wallet_b.svg"
+            alt=""
+            class="pe-2 icon--intro"
+            />
+            <span>Competitive analysis</span>
+          </div>
+          <div
+          class="container-fluid d-flex justify-content-start align-items-center p-0 mb-3 mb-lg-0"
+          >
+          <img
+          src="./images/icons/i-trophy_b.svg"
+          alt=""
+                  class="pe-2 icon--intro"
+                  />
+                  <span>to solve your problems</span>
+                </div>
+              </div>
+              <div
+              class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center"
+              >
               <img class="img-fluid" src="./images/img-3.jpg" />
             </div>
           </div>
@@ -170,85 +147,90 @@
 
       <section
         class="contaier-fluid service-section bg--dark text-light py-lg-4 py-md-4"
-      >
-        <div
-          class="container d-flex flex-column justify-content-center align-items-center py-5"
         >
-          <h2 class="w-100 text-center" style="max-width: 500px">
-            Some of our <strong>best services</strong> to solve your problems
-          </h2>
-          <div class="row gx-3 my-5">
-            <div
-              class="card col-lg-4 col-md-4 col-sm-12 bg-transparent border-0"
-            >
-              <div
-                class="rounded-circle p-4 bg-light bg-opacity-25 m-auto mb-4"
-                style="width: 5rem"
+        <div
+        class="container d-flex flex-column justify-content-center align-items-center py-5 px-0"
+        >
+        <h2 class="heading text-center" style="max-width: 500px">
+          Some of our <strong>best services</strong> to solve your problems
+        </h2>
+        <div class="row gx-3 my-5">
+          <div
+          class="card col-lg-4 col-md-4 col-sm-12 bg-transparent border-0"
+          >
+          <div
+          class="rounded-circle p-4 bg-icon m-auto mb-4"
+          style="width: 5rem"
               >
-                <img
-                  src="./images/icons/i-message_w.svg"
-                  class="img-fluid"
-                  alt="..."
-                />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Digital Marketing</h5>
-                <p class="card-text text-white-50">
+              <img
+              src="./images/icons/i-message_w.svg"
+              class="img-fluid"
+              alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Digital Marketing</h5>
+              <p class="card-text faded">
+                Lorem ipsum dolor adipisicing sit consectetur amet elit.
+                Delectus quam provident
+              </p>
+            </div>
+            </div>
+            <div
+            class="card col-lg-4 col-md-4 col-sm-12 bg-transparent border-0"
+            >
+            <div
+            class="rounded-circle p-4 bg-icon m-auto mb-4"
+            style="width: 5rem"
+            >
+            <img
+            src="./images/icons/i-feature_w.svg"
+            class="img-fluid"
+            alt="..."
+            />
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">Web Development</h5>
+                <p class="card-text faded">
                   Lorem ipsum dolor adipisicing sit consectetur amet elit.
                   Delectus quam provident
                 </p>
               </div>
             </div>
             <div
-              class="card col-lg-4 col-md-4 col-sm-12 bg-transparent border-0"
+            class="card col-lg-4 col-md-4 col-sm-12 bg-transparent border-0"
             >
-              <div
-                class="rounded-circle p-4 bg-light bg-opacity-25 m-auto mb-4"
-                style="width: 5rem"
-              >
-                <img
-                  src="./images/icons/i-feature_w.svg"
-                  class="img-fluid"
-                  alt="..."
-                />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">Web Development</h5>
-                <p class="card-text text-white-50">
-                  Lorem ipsum dolor adipisicing sit consectetur amet elit.
-                  Delectus quam provident
-                </p>
-              </div>
-            </div>
             <div
-              class="card col-lg-4 col-md-4 col-sm-12 bg-transparent border-0"
-            >
-              <div
-                class="rounded-circle p-4 bg-light bg-opacity-25 m-auto mb-4"
-                style="width: 5rem"
+            class="rounded-circle p-4 bg-icon m-auto mb-4"
+            style="width: 5rem"
               >
-                <img
-                  src="./images/icons/i-sketch_w.svg"
-                  class="img-fluid"
-                  alt="..."
-                />
-              </div>
-              <div class="card-body text-center">
-                <h5 class="card-title">UI/UX Design</h5>
-                <p class="card-text text-white-50">
-                  Lorem ipsum dolor adipisicing sit consectetur amet elit.
-                  Delectus quam provident
-                </p>
-              </div>
+              <img
+              src="./images/icons/i-sketch_w.svg"
+              class="img-fluid"
+              alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">UI/UX Design</h5>
+              <p class="card-text faded">
+                Lorem ipsum dolor adipisicing sit consectetur amet elit.
+                Delectus quam provident
+              </p>
             </div>
           </div>
-          <button class="btn btn-primary px-4 py-2 rounded-pill text-uppercase">
+          </div>
+          <button class="btn text-uppercase text-center">
             order a service
           </button>
         </div>
       </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- js script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   </body>
-</html>
+  </html>
+  

@@ -9,6 +9,33 @@
   --bs-dark: #131629e0;
   --bs-link-color: #1c1c1f;
   --bs-link-hover-color: #111213;
+
+  --clr-primary-dark: #131629e0;
+  --clr-secondary-dark: #252c50ea;
+  --clr-primary-light: #fff;
+  --clr-secondary-light: #f5f6fad7;
+  --clr-button-primary: rgb(220, 175, 8);
+  --clr-button-secondary: #e3ecf0c0;
+
+  --fw-xthin: 200;
+  --fw-thin: 300;
+  --fw-normal: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --fs-xxs: 0.8rem;
+  --fs-xs: 0.875rem;
+  --fs-s: 0.9375rem;
+  --fs-m: 1rem;
+  --fs-l: 1.5rem;
+  --fs-xl: 2.5rem;
+  --fs-xxl: 3rem;
+
+  --ff-primary: "Roboto", sans-serif;
+
+  --line-height:1.5;
+
+  --bs-nav-ff:"Roboto", sans-serif;
 }
 
 .btn {
@@ -34,12 +61,15 @@
 .nav{
     --bs-nav-link-font-weight: 0.8rem;
 }
+.navbar-nav{
+  font-family: var(--bs-nav-ff);
+  text-transform: uppercase;
+}
 
 header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 999;
 }
 
@@ -47,7 +77,7 @@ header {
   position: relative;
   margin-top: 65px;
   height: calc(100vh - 65px);
-  background-image: linear-gradient(var(--bs-dark), var(--bs-dark)),
+  background-image: linear-gradient(var(--clr-secondary-dark), var(--clr-secondary-dark)),
     url(./images/img-1.jpg);
     background-position: center;
     background-size: cover;
@@ -59,9 +89,162 @@ header {
 }
 
 .service-section{
-  background-image: linear-gradient(var(--bs-dark), var(--bs-dark)),
+  background-image: linear-gradient(var(--clr-secondary-dark), var(--clr-secondary-dark)),
     url(./images/img-1.jpg);
 }
 .nav-item:hover{
   background-color: #8e8c924b;
+}
+
+.down-arrow{
+  bottom: 0px;
+  transform: translateY(-100%);
+  width:15px;
+}
+
+.navbar{
+  height: 65px;
+}
+
+strong{
+  font-weight: var(--fw-bold);
+}
+
+.heading{
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-thin);
+  line-height: var(--line-height);
+  font-size: var(--fs-xxl);
+  max-width: 700px;
+}
+
+p{
+  font-weight: var(--fw-normal);
+}
+
+.faded{
+  opacity: 75%;
+}
+
+.btn {
+  padding: var(--fs-s) var(--fs-xl);
+  border-radius: 3rem;
+  background-color: transparent;
+  border: 2px solid var(--clr-primary-light);
+  text-transform: uppercase;
+  color: var(--clr-primary-light);
+  font-size: var(--fs-xxs);
+  font-weight: var(--fw-semi-bold);
+  font-family: var(--ff-primary);
+  margin: 0px 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 0 5px var(--clr-secondary-dark);
+  transition: background ease-out 0.5s;
+}
+
+.btn, .navbar-nav{
+  font-size: var(--fs-xxs);
+  font-weight:var(--fw-semi-bold);
+}
+.btn:hover {
+  background-color: var(--clr-button-primary);
+  border-color: var(--clr-button-primary);
+  color: var(--clr-primary-light);
+  box-shadow: 0 5px 2px var(--clr-secondary-dark);
+}
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 2px var(--clr-secondary-dark);
+}
+.icon--intro{
+  width: 40px;
+  margin-right: 1.5rem;
+}
+.bg-icon{
+  background-color: #e3ecf04b;
+}
+
+.navbar-nav{
+  height:65px;
+}
+
+.nav-toggle {
+  display: none;
+}
+.nav-label {
+  height: 100%;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-label span {
+  position: relative;
+}
+.nav-label span,
+.nav-label span::before,
+.nav-label span::after {
+  width: 20px;
+  height: 2px;
+  background: var(--clr-primary-dark);
+  border-radius: 2px;
+}
+
+.nav-label span::after,
+.nav-label span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5px;
+}
+.nav-label span::before {
+  top: 5px;
+}
+
+@media screen and (max-width:992px) {
+  .navbar-nav{
+    top: 65px;
+    right: -1.5rem;
+    position: absolute;
+    flex-direction: column;
+    min-height: 400px;
+    height: 100vh;
+    background: white;
+    width: 70%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 999;
+    min-width: 250px;
+    transform: scale(0, 1);
+    transform-origin: right;
+    transition: transform ease-in-out 250ms;
+  }
+  .nav-item {
+    height: auto;
+    width: 100%;
+    padding: 1.2rem;
+  }
+
+  .nav-label {
+    display: flex;
+  }
+
+  .nav-toggle:checked ~ .navbar-nav {
+    transform: scale(1, 1);
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  :root{
+    --fs-xxs: 0.7rem;
+    --fs-xs: 0.75rem;
+    --fs-s: 0.875rem;
+    --fs-m: 0.9375rem;
+    --fs-l: 1rem;
+    --fs-xl: 2rem;
+    --fs-xxl: 2.5rem;
+
+    --line-height:1.3;
+  }
+  
 }
